@@ -12,10 +12,9 @@ import string
             
 def shiftLetters(word, shift):
     new_word = ""
-    p = 0
     lower_case_letters = dict(zip(string.ascii_lowercase, range(1,27)))
     upper_case_letters = dict(zip(string.ascii_uppercase, range(1,27)))
-    for l in word[p:]:
+    for l in word:
         if l in lower_case_letters:
             for i in lower_case_letters:
                 if i == l: 
